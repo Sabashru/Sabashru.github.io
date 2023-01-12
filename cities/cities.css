@@ -1,0 +1,397 @@
+.red
+{
+    color: rgb(160, 1, 1);
+    font-size: 15px;
+   
+}
+
+.logo-list {
+   
+    width: 100%;
+    background-image: url(/img/foot.jpeg);
+    margin: 0;
+    padding:2em 0 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+  }
+  .logo-text{
+    position: relative;
+    top: -30px;
+    left: 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #5cfaff;
+      
+  }
+  .logo-img img{
+     
+      margin-top: 39px;
+      width: 120px;
+      
+  }
+
+  .shabash span {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+    
+  .shabash h2{
+   
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 13px 5px 0 10px;
+    font-size: 18px;
+    
+  }
+  .shabash h2 img {
+    position: relative;
+    margin-right: 5px;
+    top: -10px;
+    width: 36px;
+  }
+  .add_container{
+    text-align: left;
+    margin-top: 29px;
+    display: flex;
+    justify-content: center;
+  
+  }
+ 
+  
+  .add {
+    margin-bottom: 19px;
+    padding: 1px 15px 1px 10px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgb(1, 56, 63);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px rgba(0, 0, 0, 0.473);
+  
+    
+    }
+    
+   
+    
+    .add:active {
+    background-color: rgb(1, 117, 133);
+      box-shadow: 0 5px rgba(36, 3, 3, 0.589);
+      transform: translateY(4px);
+    }
+  .add a {
+    
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .add img {
+   width: 30px;
+   padding-right: 5px;
+  }
+  .add a h2{
+    
+    display: flex;
+    align-items:center;
+  }
+
+
+  .sidebar {
+    visibility: hidden;
+    opacity: 0;
+    height: 0; /* 100% Полный рост */
+    width: 0%; /* 0 ширина - измените это с помощью JavaScript */
+    position: absolute; /* Оставаться на месте */
+    z-index: 1; /* Оставайтесь на вершине */
+    top: 462px;
+    
+    background-color: rgb(188, 248, 250); /* Черный */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+    padding: 0; /* Поместите содержимое 60px сверху */
+    transition: 1.4s; /* 0.5 секунд эффект перехода для скольжения в боковой панели */
+    color: #000;
+  }
+.sidebar.open {
+    width: 100%;
+    transition: 1.4s visibility linear, .2s opacity linear;
+    visibility: visible;
+    opacity: 1;
+    height: 390px;
+   
+ 
+    
+}
+.sidebar h3{
+    margin: 0;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.sidebar p {
+    
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+.sidebar p a{
+    margin: 0;
+    padding: 8px 8px 8px 2px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #006efd;
+    display: inline-block;
+    
+   
+    transition: 0.3s;
+}
+.sidebar p a:hover {
+    color: #000ba3;
+}
+
+.forms {
+   position: absolute;
+   right: 0;
+   border-bottom-left-radius:8px;
+   box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.521);
+}
+  .sidebar ul{
+    padding: 0 0 10px 10px;
+    padding-right: 20px;
+    font-size: 12px;
+  }
+  .sidebar ul li {
+    padding: 0;
+    display: block;
+  }
+  .text_add{
+    max-width: 200px;
+    font-size: 13px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+  }
+  .text_add2 {
+    text-align: center;
+    box-shadow: 2px 2px 3px #080808;
+    padding: 8px;
+    background-color: rgb(255, 244, 207);
+    border-radius:30px;
+    max-width: 300px;
+    font-size: 13px;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+  }
+
+  .coppy{
+    text-align: right;
+    padding-right: 60px;
+  }
+
+  .coppy_btn{
+    background-color: rgba(1, 56, 63, 0);
+    color: rgb(0, 0, 0);
+    padding: 2px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid rgb(7, 128, 145);
+    cursor: pointer;
+    
+    box-shadow: 0 2px rgba(0, 0, 0, 0.473);
+  }
+  .coppy_btn:active {
+    background-color: rgb(117, 239, 255);
+    box-shadow: 0 5px rgba(36, 3, 3, 0.589);
+    transform: translateY(4px);
+  }
+  
+   
+
+
+  .ban{
+    
+    position: relative;
+    
+    
+  }
+  .ban img {
+    position: absolute;
+    right: -10px;
+    top: -210px;
+    width: 100px;
+  }
+  .we_contacts a{
+  
+    font-size: 14px;
+   
+}
+.top {
+    height: 300px;
+}
+
+.we_contacts {
+    
+    
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+    font-size: 14px;
+    background-color: rgb(10, 10, 10);
+    background-image: linear-gradient(45deg, transparent 50%, rgb(188, 248, 250)50%),
+      linear-gradient(-45deg, transparent 50%, rgb(188, 248, 250) 50%);
+    background-repeat: repeat-x;
+    background-position: 0 0, 0 0, 0 100%, 0 100%;
+    background-size: 12px 12px;
+}
+  .we_contacts img {
+   
+    border: rgb(188, 248, 250) 2px solid;
+    border-radius: 6px;
+    padding: 4px;
+    width: 30px;
+  }
+  .sidebar .closebtn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 8px;
+    top: -10px;
+    right: 5px;
+    font-size: 45px;
+    
+  }
+  
+  /* На боковой панели */
+  .closebtn {
+    position: absolute;
+    top: 8px;
+    text-decoration: none;
+    color: #0f0f0f;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* При наведении курсора мыши на навигационные ссылки измените их цвет */
+  .sidebar a:hover {
+    color: #f1f1f100;
+  }
+  
+  /* Положение и стиль кнопки закрытия (верхний правый угол) */
+  
+  
+  /* Кнопка для открытия бокового бара */
+
+  
+  .openbtn:hover {
+    background-color: rgb(1, 43, 46);
+  }
+  
+  /* Стиль содержимого страницы - используйте это, если вы хотите переместить содержимое страницы вправо при открытии боковой навигации */
+  #main {
+    transition: margin-left .5s; /* Если вы хотите эффект перехода */
+    padding: 20px;
+  }
+  
+  /* На небольших экранах, где высота меньше 450px, измените стиль sidebar (меньше отступов и меньший размер шрифта) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 0px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+  /* Кнопка выпадающего списка */
+.dropbtn1 {
+    background-color: rgba(7, 129, 145, 0);
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+    border: 2px solid rgb(7, 128, 145);;
+    cursor: pointer;
+  }
+  
+  
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content1 {
+    font-size: 12px;
+    
+    transition: .9s;
+    border-radius: 20px;
+    padding-left: 15px;
+    position: absolute;
+    background-color: rgb(188, 248, 250);
+    width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.623);
+    z-index: 5;
+    top: -420px;
+    left: -135px;
+    color: rgb(7, 7, 7);
+    visibility: hidden;
+    opacity: 0;
+}
+  
+    .dropdown-content1 h2 {
+      font-size: 14px;
+    }
+    .dropdown-content1 img {
+      width: 35px;
+    }
+  
+  /* Ссылки внутри выпадающего списка */
+  
+  .dropdown-content1 .wrap{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content1 a:hover {background-color: rgba(17, 17, 17, 0.541);
+    border-radius:50%;}
+  .dropdown1:hover .dropdown-content1 {
+    top: -189px;
+    transition: 1.7s visibility linear, .4s opacity linear;
+    visibility: visible;
+    opacity: 1;}
+  .dropdown1:hover .dark {
+    display: block;
+    
+}
+  
+  .dropdown1:hover .dropbtn1 {
+    background-color: #004e61;
+   
+  } 
+  .banshee_drop{
+    position: absolute;
+    top: -2px;
+    left:-53px;
+  
+  }
+  .banshee_drop img {
+    width: 100px;
+  }
+
+
+
+

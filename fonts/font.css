@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+@font-face {
+    font-family: "Kelly Slab";
+    
+    src:
+      local("Kelly Slab"),
+      url("/fonts/KellySlab-Regular.ttf") format("Kelly Slab");
+  }
+html{
+    font-family: 'Kelly Slab', cursive;
+    
+}
+button {
+    font-family: 'Kelly Slab', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap'); 
+
+.logo-text {
+    font-family: 'Rubik Wet Paint', cursive;
+    font-weight: 200;
+  }
