@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/theme.css">
     <link rel="stylesheet" href="cities.css">
+    <link rel="stylesheet" href="/css/form.css">
     <link rel="stylesheet" href="/fonts/font.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
     
 </head>
 
@@ -77,34 +79,96 @@
       <article >
         <div class="add_container">
           <div id="mySidebar" class="sidebar">
-           <div class="top"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="forms">
-            <div class="coppy"><h3>Форма заявки<br>  <button class="coppy_btn" id="copy" title="Copy Textarea Content">скопировать</button></h3></div>
-           <ul id="content">
-              <li>1.Дата и время:</li>
-              <li>2.Адрес:</li>
-              <li>3.Количество рабочих:</li>
-              <li>4.Условия работы:</li>
-              <li>5.Время работы:</li>
-              <li>6.Оплата:</li>
-              <li>7.Требования к рабочим:</li>
-              <li>Контакты заказчика:+7... </li>
-              </ul></div>
-              <p>наши контакты: <a href='tel:+79381193098'>+7(938)119-30-98</a></p>
-              <span class="text_add"> Стоимость размещения заявки - <span class="red">49 рублей</span><br> заявка публикуется:<br> на Сайте, Телеграмме, Вотсапе, Вконтакте. <br> Реквизиты для оплаты запрашивайте у менеджера.</span>
-              <span class="text_add2" > рекомендуемая оплата заявки<br> от 1700 до 2500 <br>в зависимости от сложности требуемой работы </span>
+          
+          
+            <!-- <div class="coppy"><h3>Форма заявки<br>  <button class="coppy_btn" id="copy" title="Copy Textarea Content">скопировать</button></h3></div>
+            -->
+            <div class="form-wrapper">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <form id="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">
+                <p class="contact-form__title">Форма Заявки</p>
+                <div class="preloader"></div>
+                <p class="contact-form__message"></p>
+          
+                <!-- Поле с именем -->
+                <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+                  <textarea rows="5" name="name" type="text" class="contact-form__input contact-form__input_name"
+                         placeholder="Дата и время:"minlength="10" maxlength="500"></textarea>
+                </div>
+                <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+                  <textarea rows="5" name="name2" type="text" class="contact-form__input contact-form__input_name namebig"
+                         placeholder="Адрес:"minlength="10" maxlength="500"></textarea>
+                </div>
+                <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+                  <textarea rows="5" name="name3" type="text" class="contact-form__input contact-form__input_name"
+                         placeholder="Количество рабочих:"minlength="10" maxlength="500"></textarea>
+                </div>
+                <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+                  <textarea rows="5" name="name4" type="text" class="contact-form__input contact-form__input_name namebig"
+                         placeholder="Условия работы:" minlength="20" maxlength="500"></textarea>
                 </div>
                 
-            <div class="we_contacts"> 
+               
+               
+                <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+                  <textarea rows="5" name="name7" type="text" class="contact-form__input contact-form__input_name namebig"
+                         placeholder="Требования к рабочим:" maxlength="500"></textarea>
+                </div>
+                <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+                  <textarea rows="5" name="name6" type="text" class="contact-form__input contact-form__input_name"
+                         placeholder="Оплата:" minlength="10" maxlength="500"></textarea>
+                </div>
+          
+                <!-- Поле с телефоном -->
+                <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
+                  <input name="phone" type="tel" class="contact-form__input contact-form__input_phone"
+                         placeholder="ваш контактный номер">
+                </div>
+          
+                <!-- Поле с выбором файла -->
+                <div class="contact-form__input-wrapper">
+                  <input type="file" name="files[]" id="contact-form__input_file"
+                         class="contact-form__input contact-form__input_file" multiple>
+                  <label for="contact-form__input_file" class="contact-form__file-button">
+                    <span class="contact-form__file-text">Выберите файл</span>
+                  </label>
+                </div>
+          
+                <!--Поле с темой в письме-->
+                <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme"
+                       value="Sabashru.github.io">
+                
+                      
+          
+                <!--Кнопка отправки формы-->
+                <button type="submit" class="contact-form__button">Отправить заявку за 49р</button>
+          
+                <div class="form-group form-agree form-check">
+                  <input class="form-check-input" type="checkbox" name="agree" id="agree" required value="true">
+                  <label class="form-check-label" for="agree">Нажимая кнопку, я принимаю условия <a href="#">Пользовательского
+                      соглашения</a> и даю своё согласие на обработку моих персональных данных</label>
+                  
+                </div>
+          
+              </form>
+            </div>
+          
+        </div>
+              <!-- <p>наши контакты: <a href='tel:+79381193098'>+7(938)119-30-98</a></p>
+              <span class="text_add"> Стоимость размещения заявки - <span class="red">49 рублей</span><br> заявка публикуется:<br> на Сайте, Телеграмме, Вотсапе, Вконтакте. <br> Реквизиты для оплаты запрашивайте у менеджера.</span>
+              <span class="text_add2" > рекомендуемая оплата заявки<br> от 1700 до 2500 <br>в зависимости от сложности требуемой работы </span> -->
+                
+                
+            <!-- <div class="we_contacts"> 
               
               <a href="#"><img  src="/icons/index(15).png"  alt=""></a>
               <a href="#"><img  src="/icons/telegram(1).png"  alt=""></a>
               <a href="#"><img  src="/icons/whatsapp.svg"alt=""></a>
-              <a href="#"><img  src="/icons/arroba.png"alt=""></a></div>
-            <div class="ban">
+              <a href="#"><img  src="/icons/arroba.png"alt=""></a></div> -->
+            <!-- <div class="ban">
               <img src="/img/ban-left.png" alt="">
-            </div>
-          </div>
+            </div> -->
+          
          
          <div id="main"> <button  class="add openbtn"><a href="#mapp"><h2><img src="/icons/usd-circle.svg" width="30px" alt=""> Разместить заявку</h2></a></button></div>
         </div>
@@ -304,12 +368,25 @@
         </div>
         <p class="copyright">© 2023 Все права защищены</p>
       </footer>
+
       <script src= "/script.js"></script>
       <script src="/scroll.js"></script>
       <script src="cities.js"></script>
       <script src="/sidebar.js"></script>
       <script src="/hamburger.js"></script>
       <script src="add.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="telegramform/js/telegramform.js"></script>
+   <!-- Маска ввода номера телефона. Подробнее тут: https://smartlanding.biz/maski-vvoda-telefona.html -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+   <script>
+     $(function () {
+       $('input[type="tel"]').mask('+7(000)000-00-00');
+     });
+   </script>
+    
+
    
 </body>
 
