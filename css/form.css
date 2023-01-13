@@ -26,7 +26,7 @@
     text-transform: uppercase;
     line-height: 1.5;
     text-align: center;
-    color: #584302;
+    color: #362900;
     font-size: 13px;
     margin: 0 0 30px; }
   .contact-form__message {
@@ -36,13 +36,39 @@
     border: 1px solid #282a2e;
     border-radius: 5px;
     width: 100%;
-    background: url("/img/user.svg") center left 15px no-repeat, #defaf9de;
+    background: url("/icons/calendar-clock.svg") center left 15px no-repeat, #defaf9de;
     background-size: 30px;
     margin-bottom: 3px;
     padding: 15px 15px 0 59px;
     font: 16px "Roboto", sans-serif;
     color: rgb(56, 52, 2);
     transition: 0.3s; }
+
+  #name2
+    {
+      background: url("/icons/map-marker.svg") center left 15px no-repeat, #defaf9de;
+      background-size: 30px;
+    }
+    #name3
+    {
+      background: url("/icons/users.svg") center left 15px no-repeat, #defaf9de;
+      background-size: 30px;
+    }
+    #name4
+    {
+      background: url("/icons/people-carry-box.svg") center left 15px no-repeat, #defaf9de;
+      background-size: 30px;
+    }
+    #name7
+    {
+      background: url("/icons/people-poll.svg") center left 15px no-repeat, #defaf9de;
+      background-size: 30px;
+    }
+    #name6
+    {
+      background: url("/icons/coins.svg") center left 15px no-repeat, #defaf9de;
+      background-size: 30px;
+    }
      .namebig:focus {
      
       height: 110px;
@@ -50,7 +76,7 @@
     
 
 
-    .contact-form__input_name:focus {
+   .form-wrapper .contact-form__input_name:focus {
       transition: 0.3s;
       border: 1px solid rgba(255, 241, 198, 0.2); }
   .contact-form__input_phone {
@@ -58,7 +84,7 @@
     border: 1px solid #282a2e;
     border-radius: 5px;
     width: 100%;
-    background: url("/img/tel.svg") center left 15px no-repeat, #defaf9de;
+    background: url("/icons/call-incoming.svg") center left 15px no-repeat, #defaf9de;
     background-size: 30px;
     margin-bottom: 20px;
     padding: 0 15px 0 59px;
@@ -67,7 +93,7 @@
     transition: 0.3s; }
     .contact-form__input_phone:focus {
       transition: 0.3s;
-      border: 1px solid rgba(124, 93, 0, 0.664); }
+      border: 1px solid rgb(120, 255, 255); }
   .contact-form__input_file {
     display: none; }
   .contact-form__file-button {
@@ -77,7 +103,7 @@
     border: 1px solid #262c01;
     border-radius: 5px;
     width: 100%;
-    background: url("/img/file.svg") center left 15px no-repeat,#defaf9de;
+    background: url("/icons/download.svg") center left 15px no-repeat,#defaf9de;
     background-size: 30px;
     margin-bottom: 20px;
     padding: 0 15px 0 59px;
@@ -90,7 +116,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 25px;
+    border-radius: 15px;
     border: none;
     width: 100%;
     max-width: 200px;
@@ -167,6 +193,10 @@
 .form-check {
   color: rgb(2, 2, 2);
   margin-top: 10px;
+  font-size: 12px;
+  border: #757575 1px solid;
+  padding: 5px;
+  box-shadow: 2px 2px 1px 2px #00777e;
 }
 .form-check a {
   color: rgb(93, 109, 252);
