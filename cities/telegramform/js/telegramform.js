@@ -30,13 +30,19 @@
         // Посмотреть на статус ответа, если ошибка
         // console.log(res);
         let respond = $.parseJSON(res);
-
+        let act = document.querySelector(".form_not")
+        let side = document.querySelector(".sidebar")
         if (respond === "SUCCESS") {
           message.text(successSendText).css("color", "#21d4bb");
+          act.classList.toggle('form_active');
           document.getElementById('form-contact').reset();
+
           setTimeout(() => {
             message.text("");
+            act.classList.toggle('form_active');
+            side.classList.toggle('open');
           }, 4000);
+          
         } else if (respond === "NOTVALID") {
           message.text(requiredFieldsText).css("color", "#d42121");
           setTimeout(() => {

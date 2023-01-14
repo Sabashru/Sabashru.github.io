@@ -113,9 +113,7 @@
     position: fixed; /* Оставаться на месте */
     z-index: 10; /* Оставайтесь на вершине */
     top: 0;
-    
     background-color: rgba(0, 0, 0, 0.733); /* Черный */
-   
     overflow-x: hidden; /* Отключить горизонтальную прокрутку */
     padding: 0; /* Поместите содержимое 60px сверху */
     transition: 1.4s; /* 0.5 секунд эффект перехода для скольжения в боковой панели */
@@ -123,7 +121,7 @@
   }
 .sidebar.open {
     width: 100%;
-    transition: 1.4s visibility linear, .2s opacity linear;
+    transition: 2.4s visibility linear, .2s opacity linear;
     visibility: visible;
     opacity: 1;
     height: 100%;

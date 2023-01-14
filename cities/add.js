@@ -31,9 +31,6 @@ document.addEventListener("click", function (e) {
 
 
 
-
-
-
   document.getElementById("copy").onclick = function() {
     var text = document.getElementById("content").textContent;
  
