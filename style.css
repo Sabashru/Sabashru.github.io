@@ -1,6 +1,6 @@
 
 body {
-  
+  width: 100%;
   margin: 0;
   padding: 0;
   color: #fff1c6;
@@ -20,7 +20,7 @@ nav {
   z-index: 8;
   top: 0;
   transition: top 0.3s;
-  overflow: hidden;
+  
 }
 .nav-list {
   width: 100%;
@@ -51,25 +51,29 @@ ul, li{
 
 
 .logo-list {
+  position: relative;
   width: 100%;
   overflow: hidden;
   background-image: url(/img/foot.jpeg);
   margin: 0;
-  padding:3em 0 2em 0;
+  padding:3em 0 5em 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   color: #ffffff00;
 }
 .logo-text{
     position: relative;
-    top: 20px;
-    margin: 0 auto;
+    top: 7em;
+    left: -2em;
+    transform: rotate(35deg);
+    
     text-align: center;
     font-weight: 900;
     font-size: 20px;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #5cfaff;
+    -webkit-text-stroke-color: #fae4a8;
+    z-index: 1;
    
 }
 .logo-img img{
@@ -121,20 +125,19 @@ ul, li{
   width: 40px;
 }
 
-.ban_wrap{
-top: 0px;
-right: 0px;
-position: absolute;
 
-}
+
+
+
 
 .banshee{
   width: 50px;
   position: absolute;
   z-index: 1;
   overflow: hidden;
-  top: 170px;
-  right: 110px;
+  top: 250px;
+  right: -50px;
+  transform: rotate(0deg);
 }
 
 .map {
@@ -568,32 +571,42 @@ color: rgb(250, 250, 250);
 .logo-list{
 background: linear-gradient(to bottom, #000 25%, #1c1936 75%, #000);
 }
-.container {
-	
-	top: 4%;
-	margin: auto;
-	right: -30px;
-	right: 0;
-  overflow: hidden;
-}
 
+.container {
+  margin: 0;
+	position: relative;
+	margin: auto;
+	top: 0;
+	right: 0;
+	
+  
+  
+}
+.position_logo {
+ 
+  position: absolute;
+  top: -50px;
+  right: 250px;
+  
+}
 .moon {
   display: inline-block;
-  width: 9rem;
-  height: 9rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 50%;
-  overflow: hidden;
-	left: 0;
-	right: 0;
+  
+  
+
+  
   margin: auto;
 	transform: rotate(-0.1turn);
-
+	position: absolute;
 }
 
 .light {
   box-sizing: border-box;
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   background-color: #111;
   border-radius: 50%;
   animation: cycle 20s linear infinite reverse;
@@ -602,23 +615,23 @@ background: linear-gradient(to bottom, #000 25%, #1c1936 75%, #000);
 }
 
 .texture {
-  width: 9rem;
-  height: 9rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 50%;
   position: absolute;
-  margin-top: -10rem;
+  margin-top: -15rem;
 	background-image: radial-gradient(circle at 40% 80%, #ddc997 10%, transparent 0), radial-gradient(circle at 55% 70%, #ddc997 5%, transparent 0), radial-gradient(circle at 58% 85%, #ddc997 6%, transparent 0), radial-gradient(circle at 80% 40%, #ddc997 12%, transparent 0), radial-gradient(circle at 87% 58%, #ddc997 4%, transparent 0);
   background-repeat: no-repeat;
   mix-blend-mode: multiply;
 }
 
 .sphere {
-  width: 9.75rem;
-  height: 9.75rem;
+  width: 14.75rem;
+  height: 14.75rem;
   border-radius: 50%;
-  box-shadow: inset 0 0 5rem #000, inset 0 0 5rem #000, inset 0 0 3rem #000;
+  box-shadow: inset 0 0 6rem #000, inset 0 0 3rem #000, inset 0 0 1rem #000;
   position: absolute;
-  margin-top: -10.3rem;
+  margin-top: -15.3rem;
   margin-left: -0.3rem;
   filter: blur(0.1rem);
 }
@@ -626,7 +639,7 @@ background: linear-gradient(to bottom, #000 25%, #1c1936 75%, #000);
 @keyframes cycle {
   0% {
     border-left: 0 solid #fae4a8;
-    border-right: 5rem solid #111;
+    border-right: 7.5rem solid #111;
     background-color: #111;
     transform: rotate(-10deg);
   }
@@ -634,8 +647,8 @@ background: linear-gradient(to bottom, #000 25%, #1c1936 75%, #000);
     background-color: #111;
   }
   25% {
-    border-left: 5rem solid #fae4a8;
-    border-right: 5rem solid #111;
+    border-left: 7.5rem solid #fae4a8;
+    border-right: 7.5rem solid #111;
     background-color: #fae4a8;
   }
   50% {
@@ -652,20 +665,25 @@ background: linear-gradient(to bottom, #000 25%, #1c1936 75%, #000);
     border-right: 0 solid #fae4a8;
   }
   75% {
-    border-left: 5rem solid #111;
-    border-right: 5rem solid #fae4a8;
+    border-left: 7.5rem solid #111;
+    border-right: 7.5rem solid #fae4a8;
     background-color: #111;
   }
   100% {
-    border-left: 5rem solid #111;
+    border-left: 7.5rem solid #111;
     border-right: 0 solid #fae4a8;
     background-color: #111;
     transform: rotate(10deg);
   }
 }
 
+/*----
+planets
+-----*/
 
 
+
+/*
 
 @keyframes scale {
   0%  { transform: scale(1);   }
@@ -675,7 +693,7 @@ background: linear-gradient(to bottom, #000 25%, #1c1936 75%, #000);
   86% { transform: scale(2);  }  
   98% { transform: scale(1.2); }
   100%{ transform: scale(1); }
-}
+}*/
  
 @keyframes rotate {
   0% { background-position: 0px; }

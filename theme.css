@@ -102,7 +102,8 @@
   @keyframes move-banshee {
 
     100% {
-      transform: translate(170px, -140px);
+      transform: rotate(35deg);
+      transform: translate(280px, -220px);
     }
 
 
