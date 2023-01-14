@@ -135,8 +135,8 @@ ul, li{
   position: absolute;
   z-index: 1;
   overflow: hidden;
-  top: 250px;
-  right: -50px;
+  top: 350px;
+  right: 50px;
   transform: rotate(0deg);
 }
 

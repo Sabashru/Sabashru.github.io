@@ -95,15 +95,15 @@
 
   .banshee {
     animation-name: move-banshee;
-    animation-duration: 6s;
+    animation-duration: 9s;
     animation-iteration-count: infinite;
   }
 
   @keyframes move-banshee {
 
     100% {
-      transform: rotate(35deg);
-      transform: translate(280px, -220px);
+     
+      transform: translate(400px, -320px);
     }
 
 
