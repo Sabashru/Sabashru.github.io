@@ -64,7 +64,7 @@ if (isset($_POST['name7']) && !empty($_POST['name7'])) {
           $urlFile =  "https://api.telegram.org/bot" . TOKEN . "/sendMediaGroup";
           
           // Путь загрузки файлов
-          $path = $_SERVER['DOCUMENT_ROOT'] . '/telegramform/tmp/';
+          $path = $_SERVER['DOCUMENT_ROOT'] . '/cities/telegramform/tmp/';
           
           // Загрузка файла и вывод сообщения
           $mediaData = [];
