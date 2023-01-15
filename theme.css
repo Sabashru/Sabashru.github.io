@@ -81,14 +81,22 @@
  
   */
   @keyframes rotate {
-    to {
+    
+   0%{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(-360deg);
+    }
+
+    100% {
       transform: rotate(360deg);
     }
   }
   
   .logo-theme {
     animation-name: rotate;
-    animation-duration: 3s;
+    animation-duration: 19s;
     animation-iteration-count: infinite;
   }
 
