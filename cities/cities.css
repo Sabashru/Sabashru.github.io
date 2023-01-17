@@ -363,11 +363,11 @@
 
 
   
-  logo-list {
+  /* .logo-list {
     margin: 0;
     height: 100%;
     background: linear-gradient(#0f1a2b, #411d63);
-  }
+  } */
   
   .moon {
     
@@ -597,18 +597,16 @@
  
   /* Layout and font */
   .wrapperlog {
-    width: 700px;
-    position: relative;
-    top:0px;
-    margin: auto;
+    top: 0;
+    margin: 0;
   }
   
   .bat-overlay,
-  .text {
+  .textt {
     width: 100%;
     
     position: absolute;
-    top: 110px;
+    top: 100px;
     left: 0;
   }
   
@@ -616,7 +614,7 @@
     text-align: center;
     color: var(--basecolor);
     line-height: 1.8em;
-    font-size: 2em;
+    font-size: 1.6em;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
    
@@ -646,9 +644,7 @@
   
  
   /* Bats*/
-  svg {
-    width: 100%;
-  }
+  
   
   .eye {
     fill: var(--basecolor);
@@ -776,19 +772,6 @@
     }
     100% {
       transform: translate(0px, 0px) scale(1) rotate(0deg);
-    }
-  }
-  
-  /* Mobile*/
-  @media screen and (max-width: 600px) {
-    .wrapper {
-      width: 100% !important;
-    }
-    h1 {
-      margin: 0;
-      padding: 0;
-     
-      font-size: 24px;
     }
   }
   

@@ -31,15 +31,15 @@ document.addEventListener("click", function (e) {
 
 
 
-  document.getElementById("copy").onclick = function() {
-    var text = document.getElementById("content").textContent;
+//   document.getElementById("copy").onclick = function() {
+//     var text = document.getElementById("content").textContent;
  
-    navigator.clipboard.writeText(text)
-    .then(() => {
-        console.log('Text copied to clipboard');
-        document.getElementById("copy").textContent = "скопированно"
-    })
-    .catch(err => {
-        console.error('Error in copying text: ', err);
-    });
-}
+//     navigator.clipboard.writeText(text)
+//     .then(() => {
+//         console.log('Text copied to clipboard');
+//         document.getElementById("copy").textContent = "скопированно"
+//     })
+//     .catch(err => {
+//         console.error('Error in copying text: ', err);
+//     });
+// }
